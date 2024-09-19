@@ -892,7 +892,6 @@ GameObject:
   - component: {fileID: 1031581004}
   - component: {fileID: 1031581003}
   - component: {fileID: 1031581002}
-  - component: {fileID: 1031581006}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Ground
@@ -987,27 +986,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1031581006
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1031581001}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 10, y: 2.220446e-16, z: 10}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1557932982
 GameObject:
   m_ObjectHideFlags: 0
@@ -1380,17 +1358,17 @@ PrefabInstance:
     - target: {fileID: 5300686236148493861, guid: 498307bd64d6eaf4d893c264d4d37e81,
         type: 3}
       propertyPath: speed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5300686236148493861, guid: 498307bd64d6eaf4d893c264d4d37e81,
         type: 3}
       propertyPath: maxAmmo
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5300686236148493861, guid: 498307bd64d6eaf4d893c264d4d37e81,
         type: 3}
       propertyPath: jumpForce
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5300686236148493861, guid: 498307bd64d6eaf4d893c264d4d37e81,
         type: 3}
@@ -1411,6 +1389,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5560954170291157613, guid: 498307bd64d6eaf4d893c264d4d37e81,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 5560954170291157613, guid: 498307bd64d6eaf4d893c264d4d37e81,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5560954170639327745, guid: 498307bd64d6eaf4d893c264d4d37e81,
         type: 3}
@@ -1467,9 +1455,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7566661662777034448, guid: 498307bd64d6eaf4d893c264d4d37e81,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5560954170291157611, guid: 498307bd64d6eaf4d893c264d4d37e81, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5906764108994500200, guid: 498307bd64d6eaf4d893c264d4d37e81, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1417768263415897208, guid: 498307bd64d6eaf4d893c264d4d37e81,
         type: 3}
