@@ -38,6 +38,8 @@ public class Player_Script : MonoBehaviour
     private void FixedUpdate()
     {
         playerRb.velocity = new Vector3(moveInput.x * speed, playerRb.velocity.y, 0);
+        Debug.Log(moveInput);
+        Debug.Log(playerRb.velocity);
     }
 
     private void OnCollisionEnter(Collision collision)
