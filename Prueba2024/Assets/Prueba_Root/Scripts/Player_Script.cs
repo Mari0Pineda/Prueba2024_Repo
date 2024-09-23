@@ -20,6 +20,8 @@ public class Player_Script : MonoBehaviour
     public int maxAmmo;
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] Transform shootPosition;
+    Vector2 move;
+    Vector2 look;
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +54,8 @@ public class Player_Script : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
+
+
         //A la variable constante de Vector2 que va a definir la dirección del jugador, le pasaremos el valor del joystick
         moveInput = context.ReadValue<Vector2>();
     }
