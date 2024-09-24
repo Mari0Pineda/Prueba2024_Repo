@@ -19,7 +19,7 @@ public class PlayerInteractor : MonoBehaviour
     [Header("Visual Feedback")]
     [SerializeField] GameObject pickUpUIFeedback;
     [SerializeField] GameObject[] notesUI;
-    [SerializeField] GameObject keypadPanel;
+    //[SerializeField] GameObject keypadPanel;
 
     [Header("Numeros")]
     [SerializeField] GameObject[] numeroUI;
@@ -53,7 +53,7 @@ public class PlayerInteractor : MonoBehaviour
                     numeroUI[numeros].gameObject.SetActive(true);
                 }
             }
-            if (visionHit.collider.CompareTag("Keypad"))
+            /*if (visionHit.collider.CompareTag("Keypad"))
             {
 
                 if(Input.GetKeyDown(KeyCode.E)) 
@@ -64,7 +64,7 @@ public class PlayerInteractor : MonoBehaviour
                     playerController.canMove = false;
 
                 }
-            }
+            */
         }
         else
         {
